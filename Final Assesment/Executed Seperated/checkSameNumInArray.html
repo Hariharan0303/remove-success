@@ -1,0 +1,40 @@
+<html>
+  <head>
+  </head>
+  <body>
+
+    First Array: <input  id="arr1"></br>
+	Second Array: <input  id="arr2"></br></br>
+	<button onclick="checkArray()">Get Integer</button>
+	<h2 id="output"></h2>
+  
+<script>
+    function checkArray(){
+	// Declare two array 
+	
+    var array1 = document.getElementById("arr1").value; 
+    var array2 = document.getElementById("arr2").value;  
+	
+	var array3 = JSON.stringify(array1);
+	var array4 = JSON.stringify(array1);
+	
+     
+	var repeatedArray = [];
+    for(let i = 0; i < array3.length; i++)
+	{  
+        for(let j = 0; j < array4.length; j++)
+		{ 
+            if(array1[i] === array2[j]) 
+			{ 
+            repeatedArray.push(array1[i]); 
+            }
+            document.getElementById("output").innerHTML = repeatedArray;         			
+        } 
+    }
+     alert("There is no repeated Element in given array")	
+} 
+
+</script>
+  
+</body>
+</html>

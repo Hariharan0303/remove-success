@@ -1,0 +1,28 @@
+<html>
+  <head>
+  </head>
+  <body>
+
+    Enter String: <input  id="str" ></br>
+	
+	
+	<p>
+	Your vowels in  given string : <span id="totalVowels">
+	</span>
+	</p>
+	<button onclick="calcVowels(document.getElementById('str').value)">Get Vowels</button>
+	
+  
+<script>
+    function calcVowels(text){  
+	  var matchingLetter = text.match(/[aeiou]/gi);
+	  document.getElementById('totalVowels').innerHTML = matchingLetter;
+	  }
+	
+
+</script>
+  
+</body>
+</html>
+
+if (typeof xyz === "undefined")alert("Varaible is undefined");elsealert("Variable is defined");

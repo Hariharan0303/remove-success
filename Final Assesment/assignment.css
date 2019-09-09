@@ -1,0 +1,126 @@
+h1 {
+  text-align: center;
+  position: relative;
+    bottom: 135px;
+    color: white;
+    font-size: 41px;
+  }
+  
+
+.header-img {
+	width: 100%;
+    height: 151px;
+}
+
+.js-Assignment {
+  padding-top: 34px;
+  background-color: black;
+  display: inline-block;
+  position: relative;
+  bottom: 109px;
+  height: 500px;
+  }
+.outputBtn {
+   margin: 0 auto;
+   width: 64%;
+   text-align: center;
+  }
+  
+  button {
+  background-color: #0000CD; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  border-radius: 21px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+ .btn{
+ background-color: #0000CD; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  border-radius: 21px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+  
+	
+.assignment__popup {
+  background-color: pink;
+  }
+  
+  #popup {
+    background-color: black;
+	color: white;
+	width: 564px;
+	height: 327px;
+	position: absolute;
+	color: #000000;
+	background-color: #ffffff;
+	/* To align popup window at the center of screen*/
+	top: 41%;
+	left: 41%;
+	margin-top: -100px;
+	margin-left: -150px;
+	padding-top: 26px;
+	padding-left: 65px;
+}
+
+.ontop {
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+	position: absolute;				
+	background-color: #cccccc;
+	color: #aaaaaa;
+	opacity: 1;
+	filter: alpha(opacity = 50);
+	}
+
+.briefQues {
+  font-size: 19px;
+  }
+  
+.userInfo {
+  margin-bottom: 0;
+  }
+  
+ #number1{ 
+   width: 302px; 
+   height: 27px;
+   }
+ 
+ .toExecute {
+   margin-left: 22px;
+   }
+   
+ #close {
+    float: right;
+    display: inline-block;
+	cursor: pointer;
+    padding: 6px 8px;
+    background: #e6daf9;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+#close:hover {
+  background-color: #0000CD;
+  color: white;
+}
+    
+  
+ 

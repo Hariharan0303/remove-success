@@ -1,0 +1,31 @@
+<html>
+  <head>
+  </head>
+  <body>
+
+    Start Number: <input  id="largeNum" ></br>
+	End Number:<input id="endNum"></br>
+	
+	
+	<p>
+	Largest Number: <span id="totalLargeNum">
+	</span>
+	</p>
+	<button onclick="largestNum()">Get Largest Num</button>
+	
+  
+<script>
+    function largestNum(){ 
+	var fetchedInput = document.getElementById('largeNum');
+    var end = document.getElementById('endNum');	
+	document.getElementById('totalLargeNum').innerHTML = Math.max(fetchedInput, end);
+	console.log(foundLarNum);
+	
+	//document.getElementById('totalLargeNum').innerHTML = foundLarNum;
+}
+
+</script>
+  
+</body>
+</html>
+

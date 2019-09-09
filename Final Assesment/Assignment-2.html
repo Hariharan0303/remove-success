@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="assignment.css">
+  <script type="text/javascript" src="javascript.js"></script>
+
+</head>
+<body>
+
+  <header>
+    <div class="headerImage">
+    <img class="header-img headerTag-image"src="./Images\blueHeader.jpg" id="img1"/>
+	</img>
+    <h1>Assignment</h1>
+  </header>
+ 
+  <div class= "js-Assignment">
+    <div class="outputBtn">
+  
+      <button type="button" id="ques1" onClick="pop('popDiv')">Quick Sort</button>
+      <button type="button" id="ques2" onclick="pop('popDiv2')" >subset of a string</button>
+      <button type="button" id="ques3" onclick="pop('popDiv3')" >largest of 5 numbers</button>
+      <button type="button" id="ques4" onclick="pop('popDiv4')">multiples of (x & y) under 1000</button>
+      <button type="button" id="ques5" onclick="pop('popDiv5')">String starts with 'java'</button>
+      <button type="button" id="ques6" onclick="pop('popDiv6')" >Get integer in the range</button>
+      <button type="button" id="ques7" onclick="pop('popDiv7')">List of elements of array</button>
+      <button type="button" id="ques8" onclick="pop('popDiv8')" >Age Calculation</button>
+      <button type="button" id="ques9" onclick="pop('popDiv9')" >Calculate vowels</button>
+      <button type="button" id="ques10" onclick="name of the function" >Ques No:-10</button>
+    
+    </div>	
+  
+  <!--div to show a pop-up-->
+  <!--div to show ques-1-->
+  <div id="popDiv" class="assignment__popup ontop">
+    <div class="ass-ques" id="popup">
+	  <p class="briefQues">1)JavaScript program to sort a list of elements using Quick sort?</p>
+	  <p class="userInfo">Enter the number to sort:</p>
+	  <form>
+	  <input  id="input1" type="number" placeholder="Enter Number to sort">
+	  <button class="toExecute" onClick="quick_Sort(document.getElementById('input1').value)">Click Me to Execute</button>
+	  <input  class ="btn" type="reset" value="Reset">
+	  <button class="toCancel" onclick="hide('popDiv')">Cancel</button> 
+	   </form>
+	  <span id='close' onclick="hide('popDiv')">x</span>
+      <p>
+	    Your Age : <span id="output">
+	    </span>	  
+      </p>
+	  
+	</div>
+  
+  </div>
+  
+  <!--div to show ques-2-->
+  <div id="popDiv2" class="assignment__popup ontop">
+    <div class="ass-ques" id="popup">
+	  <p class="briefQues">2)JavaScript program which returns a subset of a string?</p>
+	  <p class="userInfo">Enter the string to subset:</p>
+	  <form>
+	  <input  id="input2">
+	  <button class="toExecute btn" onClick="name of the function">Click Me to Execute</button>
+	  <input  class="btn" type="reset" value="Reset">
+	  <button class="toCancel btn" onclick="hide('popDiv2')">Cancel</button> 
+	  </form>
+	  
+	  <span id='close' onclick="hide('popDiv2')">x</span>
+      <p>
+	    Subset String <span id="output2">
+	    </span>	  
+      </p>
+	  
+	</div>
+  
+  </div>
+  
+   <!--div to show ques-3-->
+   <div id="popDiv3" class="assignment__popup ontop">
+    <div class="ass-ques" id="popup">
+	  <p class="briefQues">3)JavaScript conditional statement to find the largest of five numbers. Display an alert box to show the result?</p>
+	  <p class="userInfo">Enter the Number to check:</p>
+	  <form>
+	  Numbers: <input  id="txt1"></br>
+	  
+	  <button class="toExecute btn" onClick="name of the function" onclick="numCheck(document.getElementById('txt1').value)">Get Largest Number</button>
+	  <input  class="btn" type="reset" value="Reset">
+	  <button class="toCancel btn" onclick="hide('popDiv2')">Cancel</button> 
+	  </form>
+	  
+	  <span id='close' onclick="hide('popDiv2')">x</span>
+      <p>
+	    Subset String <span id="output2">
+	    </span>	  
+      </p>
+	  
+	</div>
+  
+  </div>
+   
+   
+   
+   
+   <!--div to show ques-4-->
+	  <div id="popDiv4" class="assignment__popup ontop">
+      <div class="ass-ques" id="popup">
+	  <p class="briefQues">4)JavaScript program to sum the multiples of (x & y) under 1000?</p>
+	  <p class="userInfo">Enter the numbers to multiplies:</p>
+	  <form>
+	  First Number: <input  id="mul1" type="number" placeholder="Starting Number"></br>
+	  Second Number: <input id="mul2" placeholder="Ebding Number">
+	  <button class="toExecute btn" onClick="multiply()">Click Me to Execute</button>
+	  <input  class ="btn" type="reset" value="Reset">
+	  <button class="toCancel" onclick="hide('popDiv4')">Cancel</button> 
+	  </form>
+
+	  <span id='close' onclick="hide('popDiv4')">x</span>
+      <p>
+	    under 1000 is: <span id="output4">
+	    </span>	  
+      </p>
+	  
+	</div>
+  
+  
+  </div>
+  
+   <!--div to show ques-5-->
+	<div id="popDiv5" class="assignment__popup ontop">
+      <div class="ass-ques" id="popup">
+	  <p class="briefQues">5)JavaScript program to check if a string starts with 'Java' and false otherwise?</p>
+	  <p class="userInfo">Enter the String to Check:</p>
+	  <form>
+	  <input  id="str" placeholder="Enter String to Check">
+	  <button class="toExecute" onClick="startsWithJava()">Click Me to Execute</button>
+	  <input  class ="btn" type="reset" value="Reset">
+	  <button class="toCancel" onclick="hide('popDiv5')">Cancel</button> 
+	  </form>
+	  
+	  <span id='close' onclick="hide('popDiv5')">x</span>
+      <p>
+	    Your Output is: <span id="output5">
+	    </span>	  
+      </p>
+	  </div>
+	</div>
+	
+	<!--div to show ques-6-->
+	<div id="popDiv6" class="assignment__popup ontop">
+      <div class="ass-ques" id="popup">
+	  <p class="briefQues">6)JavaScript program to get the integers in range (x, y)?</p>
+	  <p class="userInfo">Enter the range to Check:</p>
+	  <form>
+	  First Number: <input  id="num1" type="number" placeholder="First Number"></br>
+	  Second Number: <input  id="num2" type="number"placeholder="Second Number"></br>
+	  <button class="toExecute" onClick="getInt()">Click Me to Execute</button>
+	  <input  class ="btn" type="reset" value="Reset">
+	  <button class="toCancel" onclick="hide('popDiv6')">Cancel</button> 
+	  </form>
+	  
+	  <span id='close' onclick="hide('popDiv6')">x</span>
+      <p>
+	    Your Integer Intervals are: <span id="output6">
+	    </span>	  
+      </p>
+	  </div>
+	</div>
+	
+	
+	<!--div to show ques-7-->
+	<div id="popDiv7" class="assignment__popup ontop">
+      <div class="ass-ques" id="popup">
+	  <p class="briefQues">7)JavaScript program to get a list of elements that exist in both arrays</p>
+	  <p class="userInfo">Enter both the elements:</p>
+	  <form>
+	  First Array: <input  id="arr1" placeholder="Enter First Array"></br>
+	  Second Array: <input  id="arr2" placeholder="Enter Second Array"></br></br> 
+	  <button class="toExecute" onClick="checkArray()">Click Me to Execute</button>
+	  <input  class ="btn" type="reset" value="Reset">
+	  <button class="toCancel" onclick="hide('popDiv7')">Cancel</button> 
+	  </form>
+
+	  <span id='close' onclick="hide('popDiv7')">x</span>
+      <p>
+	    Your Existing elements are: <span id="output7">
+	    </span>	  
+      </p>
+	  </div>
+	</div>
+	
+	<!--div to show ques-8-->
+	<div id="popDiv8" class="assignment__popup ontop">
+      <div class="ass-ques" id="popup">
+	  <p class="briefQues">8)JavaScript program to calculate age?</p>
+	  <p class="userInfo">Enter Your DOB:</p>
+	  Date of Birth: <input  id="dob" size="2" maxlength="2" type="number" placeholder="Enter Date" required></br>
+	  Month of Birth: <input size="2" maxlength="2" type="number" placeholder="Enter Month" required>
+	  Year of Birth: <input id="birthYr" size="4" maxlength="4" type="number" placeholder="Enter Year" required >
+	  <p>
+	  Your Age : <span id="ageCal">
+	  </span>
+	  </p>
+	  <button class="toExecute" onClick="calcAge(birthYr)">check Your Age:</button>
+	  <input  class ="btn" type="reset" value="Reset">
+	  <button class="toCancel" onclick="hide('popDiv8')">Cancel</button> 
+
+	  <span id='close' onclick="hide('popDiv8')">x</span>
+      <p>
+	    </span>	  
+      </p>
+	  </div>
+	</div>
+  
+    
+	<!--div to show ques-9-->
+	<div id="popDiv9" class="assignment__popup ontop">
+      <div class="ass-ques" id="popup">
+	    <p class="briefQues">9)JavaScript progrsm that accepts string as a parameter & counts the number of vowels within the string</p>
+	    <p class="userInfo">Enter Your String to check:</p>
+		<form>
+	     Enter String: <input  id="str" ></br>
+	
+	    <span id='close' onclick="hide('popDiv9')">x</span>
+		<p>
+			Your vowels in  given string : <span id="totalVowels">
+			</span>
+		</p>
+		<button onclick="calcVowels(document.getElementById('str').value)">Get Vowels</button>
+		<input  class ="btn" type="reset" value="Reset">
+		<button class="toCancel" onclick="hide('popDiv9')">Cancel</button> 
+		</form>
+	  </div>
+	</div>
+	
+	
+  </div>
+
+
+</body>
+</html>

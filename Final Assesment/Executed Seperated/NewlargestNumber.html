@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  </head>
+  <body>
+
+
+    Numbers: <input  id="txt1"></br>
+	<button onclick="numCheck(document.getElementById('txt1').value)">Get Largest Number</button>
+	<h2 id="output"></h2>
+  
+<script>
+    function numCheck(numToCheckLar) {
+    var largestNum = 0;
+	for(i=0; i<=largestNum;i++) {
+	  if(numToCheckLar[i]>largestNum) {
+	    var largestNum = numToCheckLar[i];
+      }
+	}
+    alert(largestNum);
+</script>
+  
+  </body>
+</html>

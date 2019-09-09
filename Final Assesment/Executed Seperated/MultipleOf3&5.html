@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  </head>
+  <body>
+    <h2 id="output" ></h2>
+  
+<script>
+	var sum = 0;
+	for (var x = 0; x < 1000; x++)
+    {
+     if (x % 3 === 0 || x % 5 === 0)
+     {
+       sum += x;
+     } 
+    }
+
+document.getElementById("output").innerHTML = sum;
+</script>
+  
+  </body>
+</html>
+
+<script>
+	var sum = 0;
+	var firstNum = document.getElementById("mul1").value;
+	var secondNum = document.getElementById("mul2").value;
+	for (var x = 0; x < 1000; x++)
+    {
+     if (x % firstNum === 0 || x % secondNum === 0)
+     {
+       sum += x;
+     } 
+    }
+
+document.getElementById("output").innerHTML = sum;

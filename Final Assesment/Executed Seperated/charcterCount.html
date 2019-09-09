@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  </head>
+  <body>
+
+    First word: <input  id="txt1"></br>
+	<button onclick="charCount(document.getElementById('txt1').value, document.getElementById('txt1').value)">Get Integer</button>
+	<h2 id="output"></h2>
+  
+<script>
+    function charCount(word, character) {
+
+   //initialize the counter to 0
+   var count = 0;
+   console.log(count);
+   //loop through the word
+    for (i = 0; i < word.length; i++) {
+       //if the character in the word is equal to  the character passed in as a parameter increment count
+       if (word[i] == character) {
+           count++;
+       }
+  }
+
+  //return the sentence.
+var finalResult =   "The letter " + character + " appears " + count + " times in the word " + word ;
+  return "The letter " + character + " appears " + count + " times in the word " + word ;
+}
+document.getElementById('output').innerHTML = finalResult;
+</script>
+  
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+  <head>
+  </head>
+  <body>
+
+    Date of Birth: <input  id="dob" size="2" maxlength="2"></br>
+	Month of Birth: <input size="2" maxlength="2">
+	Year of Birth: <input id="birthYr" size="4" maxlength="4">
+	<p>
+	Your Age : <span id="ageCal">
+	</span>
+	</p>
+	<button onclick="calcAge(birthYr)">Get Integer</button>
+	
+  
+<script>
+    function calcAge(birthYr){
+	  var currentYear = new Date().getFullYear();
+	  var birthYear = document.getElementById("birthYr").value;
+	  var currentAge = currentYear - birthYear;
+	  document.getElementById("ageCal").innerHTML = currentAge;
+	  }
+
+</script>
+  
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  </head>
+  <body>
+
+    First Number: <input  id="num1"></br>
+	Second Number: <input  id="num2"></br>
+	<button onclick="addInt()">Get Integer</button>
+	<h2 id="output"></h2>
+  
+<script>
+    function addInt(){
+	var startingNum = document.getElementById("num1").value;
+	var lastNum = document.getElementById("num2").value;
+	var totalNum = [];
+	for (var i = startingNum+1; i<=lastNum-1; i++)
+	{
+	totalNum.push(i);
+	}
+	document.getElementById("output").innerHTML = totalNum;
+	}
+</script>
+  
+  </body>
+</html>
+
+
+
+
