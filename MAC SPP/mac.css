@@ -1,0 +1,142 @@
+.container {
+  text-align: center;
+  }
+
+.header {  
+  /*position: fixed;*/
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  color: white;
+  }
+  
+.header-nav {
+  font-family: fantasy;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+    line-height: 1;
+    width: 109px;
+    text-transform: uppercase;
+  }
+
+.navLogo {
+        margin-top: 7px;
+    margin-right: 118px;
+    margin-left: 54px;
+	}
+
+.lipstick {
+display: flex;
+    /* border: 4px solid; */
+    height: 55px;
+	}
+	
+.optionLips {
+  /*display: inline-block;*/
+    width: 199px;
+    display:flex;
+	height:53px;  
+    margin-left: 28%;
+    border: 1px solid grey;
+	border-left-width: 0;
+  }
+
+.optionLips  span {
+  font-family: fantasy;
+    font-size: 25px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    align-self: flex-end;
+    padding-left: 12px;
+}
+
+.optionLipstick {
+    display: flex;
+    width: 14%;
+    border: 1px solid gray;
+	}
+	
+.optionLipstick span {
+  align-self: flex-end;
+    padding-left: 16px;
+    text-transform: uppercase;
+    padding-bottom: 7px;
+    font-family: fantasy;
+ }
+ 
+ .optionLipstickCat {
+    display: flex;
+    width: 255px;
+    border: 1px solid gray;
+	border-right-width: 0;
+ }
+ 
+.optionLipstickCat span {
+    
+    padding-left: 12px;
+	align-self: flex-end;
+    font-family: fantasy;
+    font-size: 17px;
+    padding-bottom: 6px;
+	}
+ .main-prod {
+  display: inline-block;
+    height: 704px;
+    width: 442px;
+}
+
+.prod-img {
+  float: left;
+    position: relative;
+    top: 121px;
+    left: 14px;
+}
+
+.img {
+  height: 364px;
+}
+
+.prod-details {
+  display: inline-block;
+    height: 800px;
+    background-color: bisque;
+    margin: 0 1px 0 15px;
+    position: absolute;
+    padding-top: 18px;
+    /*font-family: fantasy;
+    font-size: 30px;
+    text-transform: uppercase;*/
+}
+
+.zac-name {
+  letter-spacing: 0;
+  font-family: fantasy;
+    padding-top: 3px;
+    font-size: 28px;
+    font-weight: lighter;
+    text-transform: uppercase;
+	    text-align: left;
+}	
+
+.zac-desc {
+  padding-top: 10px;
+    width: 52%;
+    font-family: monospace;
+    /* line-height: 1.5; */
+    letter-spacing: 0px;
+    text-align: left;
+ }
+ 
+.zac-caption {
+  font-family: monospace;
+    padding-top: 12px;
+    width: 50%;
+    /* letter-spacing: 0px; */
+    /* letter-spacing: 0px; */
+    /* line-height: 0; */
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 15px;
+	}
+  
